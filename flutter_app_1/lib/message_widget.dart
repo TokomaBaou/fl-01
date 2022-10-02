@@ -6,6 +6,8 @@ class MessageWidget extends StatelessWidget {
   }) : super(key: key);
 
   @override
+  // ListView.builder イテレータができる
+  // modelを使い　データの塊りを生成できる
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
@@ -21,9 +23,9 @@ class MessageWidget extends StatelessWidget {
             child: Image.asset("assets/img/banana-icon.jpeg"),
           ),
           //末尾
-          trailing: Text("3分前"),
-          title: Text("Obi-Wan"),
-          subtitle: Text("Hello There"),
+          trailing: const Text("3分前"),
+          title: const Text("Obi-Wan"),
+          subtitle: const Text("Hello There"),
         ),
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
@@ -33,9 +35,9 @@ class MessageWidget extends StatelessWidget {
           leading: ClipOval(
             child: Image.asset("assets/img/monkey-icon.jpeg"),
           ),
-          trailing: Text("1時間前"),
-          title: Text("Anakin"),
-          subtitle: Text("May the force be with you."),
+          trailing: const Text("1時間前"),
+          title: const Text("Anakin"),
+          subtitle: const Text("May the force be with you."),
         ),
         ListTile(
           //余白のためpaddingで囲う
@@ -49,9 +51,9 @@ class MessageWidget extends StatelessWidget {
             child: Image.asset("assets/img/banana-icon.jpeg"),
           ),
           //末尾
-          trailing: Text("3分前"),
-          title: Text("Obi-Wan"),
-          subtitle: Text("Hello There"),
+          trailing: const Text("3分前"),
+          title: const Text("Obi-Wan"),
+          subtitle: const Text("Hello There"),
         ),
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
@@ -61,9 +63,9 @@ class MessageWidget extends StatelessWidget {
           leading: ClipOval(
             child: Image.asset("assets/img/monkey-icon.jpeg"),
           ),
-          trailing: Text("1時間前"),
-          title: Text("Anakin"),
-          subtitle: Text("May the force be with you."),
+          trailing: const Text("1時間前"),
+          title: const Text("Anakin"),
+          subtitle: const Text("May the force be with you."),
         ),
         ListTile(
           //余白のためpaddingで囲う
@@ -77,9 +79,9 @@ class MessageWidget extends StatelessWidget {
             child: Image.asset("assets/img/banana-icon.jpeg"),
           ),
           //末尾
-          trailing: Text("3分前"),
-          title: Text("Obi-Wan"),
-          subtitle: Text("Hello There"),
+          trailing: const Text("3分前"),
+          title: const Text("Obi-Wan"),
+          subtitle: const Text("Hello There"),
         ),
         ListTile(
           contentPadding: const EdgeInsets.symmetric(
@@ -89,9 +91,9 @@ class MessageWidget extends StatelessWidget {
           leading: ClipOval(
             child: Image.asset("assets/img/monkey-icon.jpeg"),
           ),
-          trailing: Text("1時間前"),
-          title: Text("Anakin"),
-          subtitle: Text("May the force be with you."),
+          trailing: const Text("1時間前"),
+          title: const Text("Anakin"),
+          subtitle: const Text("May the force be with you."),
         ),
       ],
     );

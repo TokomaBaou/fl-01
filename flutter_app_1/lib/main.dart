@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'message_widget.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -29,7 +29,7 @@ class ChatScreen extends StatelessWidget {
       appBar: AppBar(
           backgroundColor: Theme.of(context).canvasColor,
           elevation: .6,
-          title: Text(
+          title: const Text(
             'Messages',
             style: TextStyle(color: Colors.black87),
           ),
@@ -37,17 +37,18 @@ class ChatScreen extends StatelessWidget {
           actions: <Widget>[
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.search),
+              icon: const Icon(Icons.search),
               color: Colors.black87,
             )
           ]),
-      body: SafeArea(
+      body: const SafeArea(
+      // SafeArea ノッチを避けるかどうか→避ける
         //リスト表示したい場合はListViewの中でListTileを使用する
         child: MessageWidget(),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chats'),
           BottomNavigationBarItem(icon: Icon(Icons.call), label: 'Calls'),
           BottomNavigationBarItem(
